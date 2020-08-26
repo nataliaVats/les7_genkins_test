@@ -21,10 +21,10 @@ public class BookTests {
 
     @Test
     public void parametrizedIntTest() {
-        int b = Integer.parseInt(System.getProperty("page"));
+        int c = Integer.parseInt(System.getProperty("page"));
         int expected = 3;
 
-        assertEquals(expected, b);
+        assertEquals(expected, c);
     }
 }
 
