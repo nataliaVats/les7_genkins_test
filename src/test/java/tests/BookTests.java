@@ -13,15 +13,15 @@ public class BookTests {
 
     @Test
     public void parametrizedStringTest() {
-        String b = System.getProperty("page");
-        String expected = "title";
+        String b = System.getProperty("title");
+        String expected = "winter";
 
         assertEquals(expected, b);
     }
 
     @Test
     public void parametrizedIntTest() {
-        int b = Integer.parseInt(System.getProperty("3"));
+        int b = Integer.parseInt(System.getProperty("page"));
         int expected = 3;
 
         assertEquals(expected, b);
