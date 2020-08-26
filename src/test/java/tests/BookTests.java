@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BookTests() {
+@Tag("book_tests")
+public class BookTests {
 
     @Test
     public void bookTest() {
@@ -20,7 +21,7 @@ public class BookTests() {
 
     @Test
     public void parametrizedIntTest() {
-        int b = Integer.parseDouble(System.getProperty(3);
+        int b = Integer.parseInt(System.getProperty("3"));
         int expected = 3;
 
         assertEquals(expected, b);
